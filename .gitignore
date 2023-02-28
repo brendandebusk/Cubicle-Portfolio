@@ -1,0 +1,5 @@
+build/
+.DS_Store
+wrangler.toml
+workers-site/
+node_modules/
