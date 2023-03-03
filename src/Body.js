@@ -37,8 +37,8 @@ const Body = () => {
           Web Development
         </div>
         <div className="section">
-          <Portfolio />
-          <TrueCommute />
+          <Portfolio callback={handleCallback}/>
+          <TrueCommute callback={handleCallback}/>
         </div>
         <div className="section-title section-hidden" id="product">
           Product Development

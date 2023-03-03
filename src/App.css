@@ -24,10 +24,6 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  /* font-weight: normal; */
-}
-
 h4 {
   font-weight: normal;
 }
@@ -71,9 +67,6 @@ h4 {
   align-items: flex-end;
   justify-content: flex-start;
   flex-direction: column;
-  /* background-color: red; */
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-  border-radius: 30px;
 }
 
 .overlay-button-container {
@@ -112,7 +105,6 @@ h4 {
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .overlay-title-container h2 {
@@ -124,6 +116,7 @@ h4 {
   font-weight: normal;
   margin: 0;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 .overlay-body-container {
@@ -132,12 +125,12 @@ h4 {
   align-items: flex-start;
   width: 100%;
   flex-direction: column;
-  gap: 15px;
 }
 
 .overlay-body-container h3 {
   font-weight: normal;
   margin: 0;
+  white-space: pre-wrap;
 }
 
 .overlay-body-container a {
@@ -156,6 +149,17 @@ h4 {
 .overlay-body-container a:hover {
   color: white;
   background-color: rgba(18, 18, 18, 0.6);
+}
+
+.overlay-learn-more-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap:wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -393,7 +397,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-weight: 700; */
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -419,15 +422,15 @@ h4 {
   color: white;
   background: url("../public/images/truecommute.png") no-repeat,
     rgb(108, 103, 100);
-  background-size: 600px;
-  background-position: left 30px bottom -50px;
+  background-size: 550px;
+  background-position: left 70px bottom -50px;
 }
 
 .portfolio {
   color: black;
   background: url("../public/images/portfolio.png") no-repeat, #dcdcdc;
-  background-size: 600px;
-  background-position: left 30px bottom -150px;
+  background-size: 550px;
+  background-position: left 70px bottom -150px;
 }
 
 .apple {
@@ -447,7 +450,7 @@ h4 {
 .brush {
   min-height: 400px;
   background: url("../public/images/brush.png") no-repeat, #f3eee8;
-  background-size: 390px;
+  background-size: 370px;
   background-position: center bottom -100px;
   color: black;
 }
@@ -455,7 +458,7 @@ h4 {
 .mandoline {
   max-width: 90%;
   background: url("../public/images/mandoline.png") no-repeat, #f1f1f1;
-  background-size: 500px;
+  background-size: 470px;
   background-position: center bottom 20px;
   color: black;
 }
@@ -506,7 +509,11 @@ h4 {
   }
 
   .true-commute {
-    background-position: left 30px bottom -150px;
+    background-position: left 30px bottom -120px;
+  }
+
+  .portfolio {
+    background-position: left 30px bottom -120px;
   }
 
   .mandoline {
@@ -555,4 +562,5 @@ h4 {
   .links {
     justify-content: center;
   }
+
 }

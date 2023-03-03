@@ -17,7 +17,7 @@ const AboutMe = () => {
         Ex-Apple (TDG). Mechanical engineering background.
         <br></br>
         <br></br>
-        <span className='span'>Currently looking for work opportunities.</span>
+        <span className='span'>Currently seeking work opportunities. 👋</span>
       </h4>
       <div className='spacer'></div>
       <div className="links">
