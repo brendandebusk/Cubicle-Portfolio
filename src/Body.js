@@ -28,7 +28,7 @@ const Body = () => {
   return (
     <div>
       {overlay === true ? <Overlay item={item} reset={resetOverlay} /> : null}
-      <div className="body">
+      <div className={overlay === true ? "body body-overlay-animation" : "body"}>
         <div className="section-opener section-hidden" id='opener'>
           <AboutMe />
           <Portrait />
