@@ -7,6 +7,10 @@ const Container = () => {
   useEffect(() => {
     const scrollFun = () => {
 
+      const experience = document.getElementById("experience");
+      const experienceBounds = experience.getBoundingClientRect();
+      const experienceTop = experienceBounds.top;
+
       const product = document.getElementById("product");
       const productBounds = product.getBoundingClientRect();
       const productTop = productBounds.top;
@@ -14,6 +18,15 @@ const Container = () => {
       const web = document.getElementById("web");
       const webBounds = web.getBoundingClientRect();
       const webTop = webBounds.top;
+
+      const timeline = document.getElementById("timeline");
+      const timelineBounds = timeline.getBoundingClientRect();
+      const timelineTop = timelineBounds.top;
+
+      const skills = document.getElementById("skills");
+      const skillsContent = document.getElementById("skillsContent");
+      const skillsBounds = skills.getBoundingClientRect();
+      const skillsTop = skillsBounds.top;
 
       const portfolio = document.getElementById("portfolio");
       const portfolioBounds = portfolio.getBoundingClientRect();
@@ -43,9 +56,22 @@ const Container = () => {
       const mandolineBounds = mandoline.getBoundingClientRect();
       const mandolineTop = mandolineBounds.top;
 
+      const pollbox = document.getElementById("pollbox");
+      const pollboxBounds = pollbox.getBoundingClientRect();
+      const pollboxTop = pollboxBounds.top;
+
+      const footprint = document.getElementById("footprint");
+      const footprintBounds = footprint.getBoundingClientRect();
+      const footprintTop = footprintBounds.top;
+
       const viewportHeight = window.innerHeight;
 
       // console.log(viewportHeight-productTop);
+
+      if ((viewportHeight-experienceTop) >= 40) {
+        experience.classList.add("lineUp");
+        experience.classList.remove('section-hidden');
+      }
 
       if ((viewportHeight-productTop) >= 40) {
         product.classList.add("lineUp");
@@ -57,6 +83,23 @@ const Container = () => {
         web.classList.remove('section-hidden');
       }
 
+      if ((viewportHeight-timelineTop) >= 75) {
+        timeline.classList.add("lineUp");
+        timeline.classList.remove('section-hidden');
+      }
+
+      if ((viewportHeight-skillsTop) >= 75) {
+        skills.classList.add("lineUp");
+        skills.classList.remove('section-hidden');
+        skillsContent.classList.add("lineUp");
+        skillsContent.classList.remove('section-hidden');
+      }
+
+      if ((viewportHeight-portfolioTop) >= 75) {
+        portfolio.classList.add("lineUp");
+        portfolio.classList.remove('section-hidden');
+      }
+
       if ((viewportHeight-portfolioTop) >= 75) {
         portfolio.classList.add("lineUp");
         portfolio.classList.remove('section-hidden');
@@ -65,6 +108,16 @@ const Container = () => {
       if ((viewportHeight-truecommuteTop) >= 75) {
         truecommute.classList.add("lineUp");
         truecommute.classList.remove('section-hidden');
+      }
+
+      if ((viewportHeight-pollboxTop) >= 75) {
+        pollbox.classList.add("lineUp");
+        pollbox.classList.remove('section-hidden');
+      }
+
+      if ((viewportHeight-footprintTop) >= 75) {
+        footprint.classList.add("lineUp");
+        footprint.classList.remove('section-hidden');
       }
 
       if ((viewportHeight-flosserTop) >= 75) {

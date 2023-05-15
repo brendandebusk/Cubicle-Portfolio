@@ -6,11 +6,14 @@ import TrueCommute from "./blocks/TrueCommute.js";
 import Portfolio from "./blocks/Portfolio.js";
 import Flosser from "./blocks/Flosser.js";
 import Brush from "./blocks/Brush.js";
-// import Apple from './blocks/Apple.js';
 import Mandoline from "./blocks/Mandoline.js";
 import GarlicZoom from "./blocks/GarlicZoom.js";
 import Emulstir from "./blocks/Emulstir.js";
 import Overlay from "./Overlay.js";
+import Timeline from "./blocks/Timeline.js";
+import Poll from './blocks/Poll.js';
+import Footprint from './blocks/Footprint.js';
+import Skills from './blocks/Skills.js';
 
 const Body = () => {
   const [overlay, setOverlay] = useState(false);
@@ -33,12 +36,28 @@ const Body = () => {
           <AboutMe />
           <Portrait />
         </div>
+        <div className="section-title section-hidden" id='experience'>
+          Experience
+        </div>
+        <div className="section">
+          <Timeline />
+        </div>
+
+        <div className="section-title section-hidden" id='skills'>
+          Skills
+        </div>
+        <div className="section">
+          <Skills />
+        </div>
+
         <div className="section-title section-hidden" id='web'>
           Web Development
         </div>
         <div className="section">
+          <Footprint callback={handleCallback}/>
           <Portfolio callback={handleCallback}/>
           <TrueCommute callback={handleCallback}/>
+          <Poll callback={handleCallback}/>
         </div>
         <div className="section-title section-hidden" id="product">
           Product Development

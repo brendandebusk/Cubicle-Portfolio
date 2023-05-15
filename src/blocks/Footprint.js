@@ -2,18 +2,18 @@
 import React, { useCallback, useState } from "react";
 import "../App.css";
 
-const GarlicZoom = (props) => {
+const Footprint = (props) => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="block item garlic block-big section-hidden"
-      id="garliczoom"
-      onClick={(useCallback = () => props.callback("chefn"))}
+      className="block item footprint block-full section-hidden"
+      id="footprint"
+      onClick={(useCallback = () => props.callback("footprint"))}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       <div className="block-title">
-        <h2>Chef'n GarlicZoom</h2>
+        <h2>Footprint</h2>
         <div className="spacer"></div>
         <div
           className={
@@ -25,9 +25,11 @@ const GarlicZoom = (props) => {
           {hover ? "Learn more" : "+"}
         </div>
       </div>
-      <h4>A quick, easy, and fun tool to chop garlic.</h4>
+      <h4>
+        A super simple tool for organizing and tracking your job hunt. Helping you leave your mark.
+      </h4>
     </div>
   );
 };
 
-export default GarlicZoom;
+export default Footprint;

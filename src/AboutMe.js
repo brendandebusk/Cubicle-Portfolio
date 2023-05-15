@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="block-opener about-me">
       <h1>
-        Hi! I'm Brendan DeBusk, a self taught frontend web developer based in
+        Hi! I'm Brendan DeBusk, a frontend web developer based in
         San Francisco.
       </h1>
       <h4>
@@ -29,5 +29,6 @@ const AboutMe = () => {
     </div>
   );
 };
+
 
 export default AboutMe;
